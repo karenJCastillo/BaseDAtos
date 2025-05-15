@@ -23,7 +23,7 @@ public class Main {
             PrestamosDAOlmpl prestamosDAO = new PrestamosDAOlmpl();
 
             do {
-                System.out.println("\n--- MENÚ PRINCIPAL ---");
+                System.out.println("Menu principal");
                 System.out.println("1. Libros");
                 System.out.println("2. Autores");
                 System.out.println("3. Miembros");
@@ -34,16 +34,16 @@ public class Main {
                 scanner.nextLine();
 
                 switch (opcion) {
-                    case 1: // Libros
+                    case 1:
                         menuLibros(scanner, LibroDAO);
                         break;
-                    case 2: // Autores
+                    case 2:
                         menuAutores(scanner, AutoresDAO);
                         break;
-                    case 3: // Miembros
+                    case 3:
                         menuMiembros(scanner, miembrosDAO);
                         break;
-                    case 4: // Préstamos
+                    case 4:
                         menuPrestamos(scanner, prestamosDAO);
                         break;
                     case 0:
@@ -59,12 +59,10 @@ public class Main {
             e.printStackTrace();
         }
     }
-
-    // Submenú Libros
     private static void menuLibros(Scanner scanner, LibroDAOlmpl dao) {
         int op;
         do {
-            System.out.println("\n--- MENÚ LIBROS ---");
+            System.out.println("Menu de libros");
             System.out.println("1. Registrar libro");
             System.out.println("2. Buscar libro");
             System.out.println("3. Actualizar libro");
@@ -133,11 +131,10 @@ public class Main {
         } while (op != 0);
     }
 
-    // Submenú Autores
     private static void menuAutores(Scanner scanner, AutoresDAOlmpl dao) {
         int op;
         do {
-            System.out.println("\n--- MENÚ AUTORES ---");
+            System.out.println("menu de autores");
             System.out.println("1. Registrar autor");
             System.out.println("2. Buscar autor");
             System.out.println("3. Actualizar autor");
@@ -206,11 +203,10 @@ public class Main {
         } while (op != 0);
     }
 
-    // Submenú Miembros
     private static void menuMiembros(Scanner scanner, MiembrosDAOlmpl dao) {
         int op;
         do {
-            System.out.println("\n--- MENÚ MIEMBROS ---");
+            System.out.println("menu de miembros");
             System.out.println("1. Registrar miembro");
             System.out.println("2. Buscar miembro");
             System.out.println("3. Actualizar miembro");
@@ -279,11 +275,10 @@ public class Main {
         } while (op != 0);
     }
 
-    // Submenú Préstamos
     private static void menuPrestamos(Scanner scanner, PrestamosDAOlmpl dao) {
         int op;
         do {
-            System.out.println("\n--- MENÚ PRÉSTAMOS ---");
+            System.out.println("menu de prestamos");
             System.out.println("1. Registrar préstamo");
             System.out.println("2. Buscar préstamo");
             System.out.println("3. Actualizar préstamo");
